@@ -22,9 +22,9 @@ st.markdown("The **Prediction** page contains our regression model for mental he
 
 st.markdown("## Datasets")
 st.markdown("### World Happiness Report Dataset")
-country = pd.read_csv("Data/processed/country_all_years.csv")
+country = pd.read_csv("https://raw.githubusercontent.com/xueqili02/fall24-ids-superawesometeamname/refs/heads/main/Data/processed/country_all_years.csv")
 st.write(country.head(10))
 
 st.markdown("### Mental Health Dataset")
-mental = pd.read_csv("Data/processed/mental_health_country.csv")
+mental = pd.read_csv("https://raw.githubusercontent.com/xueqili02/fall24-ids-superawesometeamname/refs/heads/main/Data/processed/mental_health_country.csv")
 st.write(mental.head(10))
