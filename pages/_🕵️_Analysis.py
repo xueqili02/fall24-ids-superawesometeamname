@@ -10,7 +10,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 
 st.title("🕵️ Analysis")
 # st.markdown("This interactive dashboard supports the exploration of the mental health data of the people from different countries. You can filter by the country of the person.")
-df = pd.read_csv("data/processed/mental_health_country.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/xueqili02/fall24-ids-superawesometeamname/refs/heads/main/Data/processed/mental_health_country.csv")
 
 tmp_df = df.copy()
 tmp_df.drop(columns=['User_ID'], inplace=True)
@@ -100,7 +100,7 @@ st.altair_chart(count_hist)
 
 st.markdown(f"### Socioeconomic indicators by Country")
 
-country_df = pd.read_csv("data/processed/country_mean.csv")
+country_df = pd.read_csv("https://raw.githubusercontent.com/xueqili02/fall24-ids-superawesometeamname/refs/heads/main/Data/processed/country_mean.csv")
 
 
 normalized_df = country_df.copy()

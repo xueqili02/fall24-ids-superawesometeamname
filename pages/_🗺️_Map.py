@@ -32,7 +32,7 @@ st.markdown(
     "much happiness score is explained this metric.\n"
     "The happiness scores are relative ranging from 0 to 1.\n")
 
-df_coordinate = pd.read_csv("data/processed/happiness_coordinates.csv")
+df_coordinate = pd.read_csv("https://raw.githubusercontent.com/xueqili02/fall24-ids-superawesometeamname/refs/heads/main/Data/processed/happiness_coordinates.csv")
 
 year = st.selectbox('Year:',
                     options=df_coordinate['Year'].unique())

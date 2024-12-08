@@ -117,7 +117,7 @@ if st.button("Predict"):
     else:
 
         # get country data
-        country_data = pd.read_csv('data/processed/country_mean.csv')
+        country_data = pd.read_csv('https://raw.githubusercontent.com/xueqili02/fall24-ids-superawesometeamname/refs/heads/main/Data/processed/country_mean.csv')
         happiness_score = country_data[country_data['Country'] == reported_country]['Happiness score'].values[0]
         corruption = country_data[country_data['Country'] == reported_country]['Corruption'].values[0]
 
@@ -216,7 +216,7 @@ st.subheader("Ranking")
 st.write("Based on the prediction, we rank the mental health score of the existing dataset.")
 
 # df = pd.read_csv("data/processed/mental_health_country.csv")
-df = pd.read_csv("data/processed/mental_health_country_prediction.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/xueqili02/fall24-ids-superawesometeamname/refs/heads/main/Data/processed/mental_health_country_prediction.csv")
 
 # columns = st.multiselect(
 #     "Select columns to plot CDF:",
